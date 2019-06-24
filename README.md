@@ -51,7 +51,7 @@ To test your cache policy against the Alibaba trace and compare with other polic
 
 `simulator.cluster.block_manager.set_policy([YOUR-POLICY-NAME](cache_size))`.
 
-After that, run the simulator and record the results. Your are all set.
+After that, run the simulator and record the results. You are all set.
 
 
 
