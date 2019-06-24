@@ -6,10 +6,9 @@ from block_manager import BlockManager
 from math import pow
 from policy import *
 
-def main(argv):  #argv: user_number,cache_size total (in MB)
+def main(argv):  #args: cache_size total (in MB)
 
-    user_number = int(argv[0])
-    cache_size = int(argv[1])
+    cache_size = int(argv[0])
     block_manager = BlockManager()
     cluster = Cluster(block_manager)
     simulator = Simulator(cluster, user_number)
@@ -77,5 +76,5 @@ def main(argv):  #argv: user_number,cache_size total (in MB)
         #simulator.reset()
 
 if __name__ == "__main__":
-    #user_number, total cache_size (in MB)
-    main([1, 1000])#(sys.argv[1:])
+    # total cache_size (in MB)
+    main(1000)#(sys.argv[1:])
